@@ -2,7 +2,7 @@
 {
     public class Player
     {
-        public Player(string firstName, string lastName, int yearOfBirth, int health)
+        public Player(string firstName, string lastName, int yearOfBirth, int health, int stamina)
         {
             if(firstName.Length < 3)
             {
@@ -29,7 +29,7 @@
             {
                 throw new ArgumentException("Stamina must be greater than 0.");
             }
-            
+            Stamina = Stamina;
         }
 
         public string FirstName { get; }
@@ -56,7 +56,7 @@
                 throw new ArgumentException("You dont have enough power to challenge your opponent!");
             }
 
-            if( )
+            if()
             { 
                 Console.WriteLine("Please choose your attack option : 1. Fist 2. Light Attack 3. Heavy Attack");
 

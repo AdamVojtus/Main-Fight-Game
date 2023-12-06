@@ -11,7 +11,7 @@ var listOfPlayers = new List<Player>
 
 var game = new Game(listOfPlayers, false, 10);
 
-var newPlayer = new Player("Jon", "Snow", 1800, 100);
+var newPlayer = new Player("Jon", "Snow", 1800, 20, 10);
 game.AddPlayer(newPlayer);
 
 game.Start();

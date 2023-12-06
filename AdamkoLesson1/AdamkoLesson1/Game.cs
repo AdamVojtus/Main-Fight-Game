@@ -32,8 +32,8 @@
             {
 
 
-                player2.DecreaeseHealth;
-                Console.WriteLine(player2.Heath);
+                //player2.DecreaeseHealth;
+                //Console.WriteLine(player2.Heath);
                 
             }
 
