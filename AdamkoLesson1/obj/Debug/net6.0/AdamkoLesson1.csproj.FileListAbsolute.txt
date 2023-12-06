@@ -1,0 +1,23 @@
+C:\Users\tonco\source\repos\AdamkoLesson1\AdamkoLesson1\bin\Debug\net6.0\AdamkoLesson1.exe
+C:\Users\tonco\source\repos\AdamkoLesson1\AdamkoLesson1\bin\Debug\net6.0\AdamkoLesson1.deps.json
+C:\Users\tonco\source\repos\AdamkoLesson1\AdamkoLesson1\bin\Debug\net6.0\AdamkoLesson1.runtimeconfig.json
+C:\Users\tonco\source\repos\AdamkoLesson1\AdamkoLesson1\bin\Debug\net6.0\AdamkoLesson1.dll
+C:\Users\tonco\source\repos\AdamkoLesson1\AdamkoLesson1\bin\Debug\net6.0\AdamkoLesson1.pdb
+C:\Users\tonco\source\repos\AdamkoLesson1\AdamkoLesson1\obj\Debug\net6.0\AdamkoLesson1.csproj.AssemblyReference.cache
+C:\Users\tonco\source\repos\AdamkoLesson1\AdamkoLesson1\obj\Debug\net6.0\AdamkoLesson1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tonco\source\repos\AdamkoLesson1\AdamkoLesson1\obj\Debug\net6.0\AdamkoLesson1.AssemblyInfoInputs.cache
+C:\Users\tonco\source\repos\AdamkoLesson1\AdamkoLesson1\obj\Debug\net6.0\AdamkoLesson1.AssemblyInfo.cs
+C:\Users\tonco\source\repos\AdamkoLesson1\AdamkoLesson1\obj\Debug\net6.0\AdamkoLesson1.csproj.CoreCompileInputs.cache
+C:\Users\tonco\source\repos\AdamkoLesson1\AdamkoLesson1\obj\Debug\net6.0\AdamkoLesson1.dll
+C:\Users\tonco\source\repos\AdamkoLesson1\AdamkoLesson1\obj\Debug\net6.0\refint\AdamkoLesson1.dll
+C:\Users\tonco\source\repos\AdamkoLesson1\AdamkoLesson1\obj\Debug\net6.0\AdamkoLesson1.pdb
+C:\Users\tonco\source\repos\AdamkoLesson1\AdamkoLesson1\obj\Debug\net6.0\AdamkoLesson1.genruntimeconfig.cache
+C:\Users\tonco\source\repos\AdamkoLesson1\AdamkoLesson1\obj\Debug\net6.0\ref\AdamkoLesson1.dll
+C:\Users\adamk\Downloads\AdamkoLesson1 (1)\AdamkoLesson1\AdamkoLesson1\obj\Debug\net6.0\AdamkoLesson1.csproj.AssemblyReference.cache
+C:\Users\adamk\Downloads\AdamkoLesson1 (1)\AdamkoLesson1\AdamkoLesson1\obj\Debug\net6.0\AdamkoLesson1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adamk\Downloads\AdamkoLesson1 (1)\AdamkoLesson1\AdamkoLesson1\obj\Debug\net6.0\AdamkoLesson1.AssemblyInfoInputs.cache
+C:\Users\adamk\Downloads\AdamkoLesson1 (1)\AdamkoLesson1\AdamkoLesson1\obj\Debug\net6.0\AdamkoLesson1.AssemblyInfo.cs
+C:\Users\adamk\Downloads\AdamkoLesson1 (1)\AdamkoLesson1\AdamkoLesson1\obj\Debug\net6.0\AdamkoLesson1.csproj.CoreCompileInputs.cache
+C:\Users\adamk\Downloads\AdamkoLesson1 (1)\AdamkoLesson1\AdamkoLesson1\obj\Debug\net6.0\AdamkoLesson1.dll
+C:\Users\adamk\Downloads\AdamkoLesson1 (1)\AdamkoLesson1\AdamkoLesson1\obj\Debug\net6.0\refint\AdamkoLesson1.dll
+C:\Users\adamk\Downloads\AdamkoLesson1 (1)\AdamkoLesson1\AdamkoLesson1\obj\Debug\net6.0\AdamkoLesson1.pdb
