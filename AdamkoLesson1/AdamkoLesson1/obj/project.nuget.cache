@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "TVO6kIp8gAXZqWJMOpDpDch/5s2FPcSM5B1icdfcbKeNwrd9ApQuX9rsB/boroAoSrX87V0FSJ3qb6AHFbj3Hw==",
+  "dgSpecHash": "Wi716ePW+pvfpWMGfDIAcHDhjQi8tMwI4vHo05GgWw1toN8S2En1cbxqLsksDNs9jbeKyUBpPyDkpkFq+rOOHg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\adamv_3nzm573\\OneDrive\\Documentos\\GitHub\\Main-Fight-Game\\AdamkoLesson1\\AdamkoLesson1\\AdamkoLesson1.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\adamk\\OneDrive\\Dokumenty\\GitHub\\Main-Fight-Game\\AdamkoLesson1\\AdamkoLesson1\\AdamkoLesson1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\adamk\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\adamk\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\adamk\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\adamk\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
+  ],
   "logs": []
 }

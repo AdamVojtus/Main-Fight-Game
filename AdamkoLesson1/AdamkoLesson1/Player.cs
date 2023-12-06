@@ -55,29 +55,70 @@
             {
                 throw new ArgumentException("You dont have enough power to challenge your opponent!");
             }
-
-            if()
-            { 
-                Console.WriteLine("Please choose your attack option : 1. Fist 2. Light Attack 3. Heavy Attack");
-
                 fist = 1;
                 lightAttack = 2;
                 heavyAttack = 4;
 
-                criticalChancefist = Random(1, 2);
+                criticalChanceFist = Random(1, 2, 3, 4);
+                criticalChanceLA = Random(1, 2, 3, 4, 5);
+                criticalChanceHA = Random(1, 2, 3, 4, 5, 6, 7, 8);
+            
+                Console.WriteLine("Please choose your attack option : 1. Fist 2. Light Attack 3. Heavy Attack");
+                var userChoice = Console.ReadLine();
 
-                if(criticalChance == 2)
+                if(userChoice == "1")
                 {
-                    Health -= damage + 2;
-                    Stamina -= 2;
+                    if(criticalChanceFist == 1)
+                    {
+                         Health -= fist + 1;
+                         Stamina -= 1;
+                         
+                         Console.WriteLine("You have used your fist and dealt 2 damage with critical!");
+                    }
+                    else
+                    {
+                        Health -= fist;
+                        Stamina -= 1;
+                        
+                        Console.WriteLine("You have used your fist and dealt 1 damage without critical!");
+                    }
+
+                if(userChoice == "2")
+                {
+                    if(criticalChanceLA == 4)
+                    {
+                         Health -= lightAttack + 2;
+                         Stamina -= 3;
+                         
+                         Console.WriteLine("You have used your light attack weapon and dealt 6 damage with critical!");
+                    }
+                    else
+                    {
+                        Health -= lightAttack;
+                        Stamina -= 3;
+                        
+                        Console.WriteLine("You have used your light attack weapon and dealt 2 damage without critical!");
+                    }
 
                 }
-                else
-                {
-                    Health -= damage;
-                    Stamina -= 2;
-                }
 
+                if(userChoice == "3")
+                {
+                    if(criticalChanceHA == 3)
+                    {
+                         Health -= heavyAttack + 11;
+                         Stamina -= 5;
+                         
+                         Console.WriteLine("You have have a big luck my friend! You have crushed him to the ground!");
+                    }
+                    else
+                    {
+                        Health -= heavyAttack;
+                        Stamina -= 5;
+                        
+                        Console.WriteLine("You have used your heavy attack weapon and dealt 4!");
+                    }
+                }
             }
             
         }
