@@ -43,8 +43,9 @@
         public int criticalChanceFist { get; private set; }
         public int criticalChanceLA { get; private set; }
         public int criticalChanceHA { get; private set; }
+        public int userChoice { get; }
 
-        public void DecreaeseHealth(int stamina, int fist, int lightAttack, int heavyAttack, int criticalChanceFist, int criticalChanceLA, int criticalChanceHA)
+        public void DecreaeseHealth(int stamina, int fist, int lightAttack, int heavyAttack, int criticalChanceFist, int criticalChanceLA, int criticalChanceHA, string userChoice)
         {
             if(Health <= 0)
             {
@@ -119,11 +120,26 @@
                         Console.WriteLine("You have used your heavy attack weapon and dealt 4!");
                     }
                 }
+
             }
             
         }
 
-        private int Random(int v1, int v2)
+        private int Random(int v1, int v2, int v3, int v4, int v5, int v6, int v7, int v8)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Dodge(int stamina, int health, string userChoice, int criticalChanceFist)
+         {
+            if(userChoice == "1" && criticalChanceFist == 1) 
+            {
+                Console.WriteLine("Your opponent attacked with fist, had luck and dealt 2 damage with critical! Do you want to dodge? If yes than press 1 if not press 2");
+                
+            }
+         }
+
+        private int Random(int v1, int v2, int v, int v3, int v4, int v5)
         {
             throw new NotImplementedException();
         }
