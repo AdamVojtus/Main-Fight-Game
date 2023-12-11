@@ -1,4 +1,6 @@
-﻿namespace AdamkoLesson1
+﻿using System.Reflection.Metadata;
+
+namespace AdamkoLesson1
 {
     public class Player
     {
@@ -44,6 +46,7 @@
         public int criticalChanceLA { get; private set; }
         public int criticalChanceHA { get; private set; }
         public int userChoice { get; }
+        public int dodgeChance { get; private set; }
 
         public void DecreaeseHealth(int stamina, int fist, int lightAttack, int heavyAttack, int criticalChanceFist, int criticalChanceLA, int criticalChanceHA, string userChoice)
         {
@@ -125,19 +128,37 @@
             
         }
 
-        private int Random(int v1, int v2, int v3, int v4, int v5, int v6, int v7, int v8)
-        {
-            throw new NotImplementedException();
-        }
-
         public void Dodge(int stamina, int health, string userChoice, int criticalChanceFist)
          {
             if(userChoice == "1" && criticalChanceFist == 1) 
             {
                 Console.WriteLine("Your opponent attacked with fist, had luck and dealt 2 damage with critical! Do you want to dodge? If yes than press 1 if not press 2");
-                
+                var userDodgeInput = Console.ReadLine();
+
+                if(userDodgeInput == "1")
+                {
+                    dodgeChance = Random(1,2);
+                    stamina -= 1;
+                }
+                else
+                {
+                    health -= 2;
+                    if(stamina == 10)
+                    {
+                        stamina += 0;
+                    }
+                    else
+                    {
+                        stamina += 1;
+                    }
+                }
             }
          }
+
+        private int Random(int v1, int v2)
+        {
+            throw new NotImplementedException();
+        }
 
         private int Random(int v1, int v2, int v, int v3, int v4, int v5)
         {
