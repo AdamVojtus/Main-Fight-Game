@@ -153,6 +153,30 @@ namespace AdamkoLesson1
                     }
                 }
             }
+            else if(userChoice == "1")
+            {
+                Console.WriteLine("Your opponent attacked with fist, and dealt 1 damage without critical! Do you want to dodge? If yes than press 1 if not press 2");
+                var userDodgeInput = Console.ReadLine();
+
+                if(userDodgeInput == "1")
+                {
+                    dodgeChance = Random(1,2);
+                    stamina -= 1;
+                }
+                else
+                {
+                    health -= 2;
+                    if(stamina == 10)
+                    {
+                        stamina += 0;
+                    }
+                    else
+                    {
+                        stamina += 1;
+                    }
+                }
+            }
+            
          }
 
         private int Random(int v1, int v2)
