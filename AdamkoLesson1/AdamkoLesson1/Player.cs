@@ -139,6 +139,7 @@ namespace AdamkoLesson1
                 {
                     dodgeChance = Random(1,2);
                     stamina -= 1;
+                    health -= 1;
                 }
                 else
                 {
@@ -165,7 +166,7 @@ namespace AdamkoLesson1
                 }
                 else
                 {
-                    health -= 2;
+                    health -= 0;
                     if(stamina == 10)
                     {
                         stamina += 0;
@@ -176,7 +177,21 @@ namespace AdamkoLesson1
                     }
                 }
             }
-            
+            if(userChoice == "2")
+            {
+                Console.WriteLine("Your opponent attacked with light weapon and dealt 2 damage with critical! Do you want to dodge this attack? Yes for 1, No for 2");
+                var userDodgeInput = Console.ReadLine();
+
+                if(userDodgeInput == "1")
+                {
+                    dodgeChance = Random(1,2);
+                    stamina -=2;
+                }
+                else
+                {
+                    health 
+                }
+            }
          }
 
         private int Random(int v1, int v2)
