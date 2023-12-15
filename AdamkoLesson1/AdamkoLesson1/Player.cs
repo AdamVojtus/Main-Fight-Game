@@ -177,7 +177,7 @@ namespace AdamkoLesson1
                     }
                 }
             }
-            if(userChoice == "2")
+            if(userChoice == "2" && criticalChanceLA == 1)
             {
                 Console.WriteLine("Your opponent attacked with light weapon and dealt 2 damage with critical! Do you want to dodge this attack? Yes for 1, No for 2");
                 var userDodgeInput = Console.ReadLine();
@@ -185,11 +185,36 @@ namespace AdamkoLesson1
                 if(userDodgeInput == "1")
                 {
                     dodgeChance = Random(1,2);
-                    stamina -=2;
+                    if(dodgeChance == 1)
+                    {
+                        health -=1;
+                        stamina -=1;
+                    }
                 }
                 else
                 {
-                    health 
+                    health  -= 3;
+                    stamina += 2;
+                }
+            }
+            if(userChoice == "2")
+            {
+                Console.WriteLine("Your opponent attacked with light weapon and dealth 2 damage without critical! Do you wwant to dodge this attack? 1 for Yes, 2 for No");
+                var userDodgeInput = Console.ReadLine();
+
+                if(userDodgeInput == "1")
+                {
+                    dodgeChance = Random(1,2);
+                    if(dodgeChance == 1)
+                    {
+                        health -= 1;
+                        stamina -= 1;    
+                    }
+                    else
+                    {
+                        health -= 2;
+                        stamina += 1;
+                    }
                 }
             }
          }
