@@ -128,6 +128,11 @@ namespace AdamkoLesson1
             
         }
 
+        private int Random(int v1, int v2, int v3, int v4, int v5)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Dodge(int stamina, int health, string userChoice, int criticalChanceFist, int criticalChanceLA, int criticalChanceHA)
          {
             if(criticalChanceFist == 1) 
@@ -137,7 +142,7 @@ namespace AdamkoLesson1
 
                 if(userDodgeInput == "1")
                 {
-                    dodgeChance = Random(1,2);
+                    dodgeChance = Random(1,2,3,4);
                     stamina -= 1;
                     health -= 1;
                 }
@@ -161,7 +166,7 @@ namespace AdamkoLesson1
 
                 if(userDodgeInput == "1")
                 {
-                    dodgeChance = Random(1,2);
+                    dodgeChance = Random(1,2,3,4);
                     stamina -= 1;
                 }
                 else
@@ -184,7 +189,7 @@ namespace AdamkoLesson1
 
                 if(userDodgeInput == "1")
                 {
-                    dodgeChance = Random(1,2);
+                    dodgeChance = Random(1,2,3,4,5);
                     if(dodgeChance == 1)
                     {
                         health -=1;
@@ -197,14 +202,14 @@ namespace AdamkoLesson1
                     stamina += 2;
                 }
             }
-            if(criticalChanceLA == 1)
+            if(criticalChanceLA == 2)
             {
                 Console.WriteLine("Your opponent attacked with light weapon and dealth 2 damage without critical! Do you wwant to dodge this attack? 1 for Yes, 2 for No");
                 var userDodgeInput = Console.ReadLine();
 
                 if(userDodgeInput == "1")
                 {
-                    dodgeChance = Random(1,2);
+                    dodgeChance = Random(1,2,3,4,5);
                     if(dodgeChance == 1)
                     {
                         health -= 1;
@@ -219,41 +224,46 @@ namespace AdamkoLesson1
             }
             if(criticalChanceHA == 1)
             {
-                Console.WriteLine("Your opponent attacked with heavy weapon and dealt 4 damage without critical! Do you wwant to dodge this attack? 1 for Yes, 2 for No");
+                Console.WriteLine("Your opponent attacked with heavy weapon and dealt 4 damage with critical! Do you wwant to dodge this attack? 1 for Yes, 2 for No");
                 var userDodgeInput = Console.ReadLine();
 
                 if(userDodgeInput == "1")
                 {
-                    dodgeChance = Random(1,2);
+                    dodgeChance = Random(1,2,3,4,5,6,7,8,9,10);
                     if(dodgeChance == 1)
                     {
-                        health -= 3;
-                        stamina += 2;    
+                        health -= 15;
+                        Console.WriteLine("This attack was too powerful and cannot be dodged!");    
                     }
                     else
                     {
-                        health -= 4;
-                        stamina += 3;
-                }
+                        health -= 15;
+                        stamina += 5;
                     }
+                }
             }
             if(criticalChanceHA == 2)
             {
                 Console.WriteLine("");
                 var userDodgeInput = Console.ReadLine();
 
-                if(userDodgeInput)
+                if(userDodgeInput == "1")
+                {
+                    dodgeChance = Random(1,2,3,4,5,6,7,8,9,10);
+                    if(dodgeChance == 1)
+                    {
+                        health -= 3;
+                        stamina += 3;
+                    }
+                    else
+                    {
+                        health -= 4;
+                        stamina += 2;
+                    }
+                }
             }
 
-        private int Random(int v1, int v2)
-        {
-            throw new NotImplementedException();
-        }
-
-        private int Random(int v1, int v2, int v, int v3, int v4, int v5)
-        {
-            throw new NotImplementedException();
-        }
+         }
 
         public void IncreeeseHealth(int value)
         {           
