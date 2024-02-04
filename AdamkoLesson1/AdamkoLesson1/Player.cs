@@ -45,8 +45,20 @@ namespace AdamkoLesson1
         public int criticalChanceFist { get; private set; }
         public int criticalChanceLA { get; private set; }
         public int criticalChanceHA { get; private set; }
-        public int userChoice { get; }
         public int dodgeChance { get; private set; }
+
+        private static Random random = new Random();
+
+        public static int GetRandomNumber(int min, int max)
+        {
+            return random.Next(min, max + 1);
+        }
+
+        public static int GetRandomNumber(params int[] numbers)
+        {
+            int index = random.Next(0, numbers.Length);
+            return numbers[index];
+        }
 
         public void DecreaeseHealth(int stamina, int fist, int lightAttack, int heavyAttack, int criticalChanceFist, int criticalChanceLA, int criticalChanceHA, string userChoice)
         {
@@ -63,12 +75,12 @@ namespace AdamkoLesson1
                 lightAttack = 2;
                 heavyAttack = 4;
 
-                criticalChanceFist = Random(1, 2, 3, 4);
-                criticalChanceLA = Random(1, 2, 3, 4, 5);
-                criticalChanceHA = Random(1, 2, 3, 4, 5, 6, 7, 8);
+                criticalChanceFist = GetRandomNumber(1, 2, 3, 4);
+                criticalChanceLA = GetRandomNumber(1, 2, 3, 4, 5);
+                criticalChanceHA = GetRandomNumber(1, 2, 3, 4, 5, 6, 7, 8);
             
                 Console.WriteLine("Please choose your attack option : 1. Fist 2. Light Attack 3. Heavy Attack");
-                var userChoice = Console.ReadLine();
+                var userAttackChoice = Console.ReadLine();
 
                 if(userChoice == "1")
                 {
@@ -128,11 +140,6 @@ namespace AdamkoLesson1
             
         }
 
-        private int Random(int v1, int v2, int v3, int v4, int v5)
-        {
-            throw new NotImplementedException();
-        }
-
         public void Dodge(int stamina, int health, string userChoice, int criticalChanceFist, int criticalChanceLA, int criticalChanceHA)
          {
             if(criticalChanceFist == 1) 
@@ -142,7 +149,7 @@ namespace AdamkoLesson1
 
                 if(userDodgeInput == "1")
                 {
-                    dodgeChance = Random(1,2,3,4);
+                    dodgeChance = GetRandomNumber(1,2,3,4);
                     stamina -= 1;
                     health -= 1;
                 }
@@ -166,7 +173,7 @@ namespace AdamkoLesson1
 
                 if(userDodgeInput == "1")
                 {
-                    dodgeChance = Random(1,2,3,4);
+                    dodgeChance = GetRandomNumber(1,2,3,4);
                     stamina -= 1;
                 }
                 else
@@ -189,7 +196,7 @@ namespace AdamkoLesson1
 
                 if(userDodgeInput == "1")
                 {
-                    dodgeChance = Random(1,2,3,4,5);
+                    dodgeChance = GetRandomNumber(1,2,3,4,5);
                     if(dodgeChance == 1)
                     {
                         health -=1;
@@ -209,7 +216,7 @@ namespace AdamkoLesson1
 
                 if(userDodgeInput == "1")
                 {
-                    dodgeChance = Random(1,2,3,4,5);
+                    dodgeChance = GetRandomNumber(1,2,3,4,5);
                     if(dodgeChance == 1)
                     {
                         health -= 1;
@@ -229,7 +236,7 @@ namespace AdamkoLesson1
 
                 if(userDodgeInput == "1")
                 {
-                    dodgeChance = Random(1,2,3,4,5,6,7,8,9,10);
+                    dodgeChance = GetRandomNumber(1,2,3,4,5,6,7,8,9,10);
                     if(dodgeChance == 1)
                     {
                         health -= 15;
@@ -249,7 +256,7 @@ namespace AdamkoLesson1
 
                 if(userDodgeInput == "1")
                 {
-                    dodgeChance = Random(1,2,3,4,5,6,7,8,9,10);
+                    dodgeChance = GetRandomNumber(1,2,3,4,5,6,7,8,9,10);
                     if(dodgeChance == 1)
                     {
                         health -= 3;
