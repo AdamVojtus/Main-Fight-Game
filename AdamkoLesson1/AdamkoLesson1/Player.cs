@@ -31,7 +31,7 @@ namespace AdamkoLesson1
             {
                 throw new ArgumentException("Stamina must be greater than 0.");
             }
-            Stamina = Stamina;
+            Stamina = stamina;
         }
 
         public string FirstName { get; }
@@ -86,7 +86,7 @@ namespace AdamkoLesson1
                 {
                     if(criticalChanceFist == 1)
                     {
-                         Health -= fist + 1;
+                        Health -= fist + 1;
                          Stamina -= 1;
                          
                          Console.WriteLine("You have used your fist and dealt 2 damage with critical!");

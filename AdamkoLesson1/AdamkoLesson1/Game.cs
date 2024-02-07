@@ -19,22 +19,26 @@
             MaxPlayersCount = maxPlayersCount;
         }
 
+        
+
         public List<Player> Players { get; }
         public bool IsSingle { get; }
         public int MaxPlayersCount { get; }
         public bool IsGameRunning { get; private set; }
 
+       
         public void Start()
         {
             IsGameRunning = true;
 
+            int currentPlayerIndex = 0;
+
             while (Players.All(x => x.Health > 0))
             {
+             Player currentPlayer = Players[currentPlayerIndex];
 
-
-                //player2.DecreaeseHealth;
-                //Console.WriteLine(player2.Heath);
-                
+            currentPlayer.DecreaeseHealth(int stamina, int fist, int lightAttack, int heavyAttack, int criticalChanceFist, int criticalChanceLA, int criticalChanceHA, string userChoice);
+            currentPlayerIndex = (currentPlayerIndex + 1) % Players.Count;
             }
 
             IsGameRunning = false;

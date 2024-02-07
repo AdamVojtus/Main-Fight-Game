@@ -18,7 +18,14 @@ game.Start();
 
 while (game.IsGameRunning)
 {
-    Console.WriteLine("Score of players are: []");
+     Console.WriteLine("Score of players are:");
+            foreach (var player in game.Players)
+            {
+                Console.WriteLine($"{player.FirstName} {player.LastName}: Health - {player.Health}, Stamina - {player.Stamina}");
+            }
+
+            // Wait for a short duration before checking game state again
+            System.Threading.Thread.Sleep(1000);
 }
 
 Console.WriteLine("Game over!");
